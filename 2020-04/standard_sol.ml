@@ -69,6 +69,7 @@ let print_header () =
   Format.printf "  N      dots    triads  solve\n%!";
   Format.printf " --   -------   -------  -----\n%!"
 
+(*
 let () =
   print_header ();
   for n = 1 to 26 do
@@ -79,6 +80,7 @@ let () =
       then "1" else "-" in
     Format.printf "%3i %9i %9.1f %6s \n%!" n dots triads result
   done
+*)
 
 let () =
   let i = try int_of_string Sys.argv.(1) |> max 1 with _ -> 1 in
